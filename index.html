@@ -103,8 +103,108 @@
 									<li>
 										<h2><strong>Nostr</strong></h2>
 										<span class="social-logo"><img width="130px" src="images/nostr.svg" style="padding-bottom: 20px;"></span>
-										<h3>Public Key:</h3>
-                                        <p style="word-break: break-all">npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9</p>
+                                        <h3>Account:</h3>
+                                        <h6>click to toggle</h6>
+                                        <table class="nostr-tab">
+                                            <tr id="nostr-row">
+                                                <td class="nostr-cell"><p id="qr-toggle" class="collapser untoggled">QR Code</p></td>
+                                                <td class="nostr-cell"><p id="pubkey-toggle" class="collapser untoggled">Public Key</p></td>
+                                            </tr>
+                                        </table>
+                                        <div id="qr" class="collapsible collapsed">
+                                            <img src="images/qr.svg" width="150px">
+                                        </div>
+                                        <div id="pubkey" class="collapsible collapsed">
+                                            <p style="word-break: break-all">npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9</p>
+                                        </div>
+
+                                        <script>
+                                            function toggleCollapsible(target,alt,label,altLabel){
+                                                switch (target.classList.contains("collapsed")) {
+                                                    case true:
+                                                        target.classList.remove("collapsed");
+                                                        target.classList.add("expanded");
+                                                        alt.classList.add("collapsed");
+                                                        alt.classList.remove("expanded");
+                                                        label.classList.remove("untoggled")
+                                                        label.classList.add("toggled")
+                                                        altLabel.classList.add("untoggled")
+                                                        altLabel.classList.remove("toggled")
+                                                        break;
+                                                    case false:
+                                                        target.classList.add("collapsed");
+                                                        target.classList.remove("expanded");
+                                                        alt.classList.add("collapsed");
+                                                        alt.classList.remove("expanded");
+                                                        label.classList.remove("toggled")
+                                                        label.classList.add("untoggled")
+
+                                                        break;
+                                                }
+                                            }
+
+                                            var qrToggle = document.getElementById("qr-toggle");
+                                            var pubkeyToggle = document.getElementById("pubkey-toggle");
+                                            var qr = document.getElementById("qr");
+                                            var pubkey = document.getElementById("pubkey");
+
+                                            qrToggle.addEventListener("click", function() {
+                                                toggleCollapsible(qr, pubkey, qrToggle, pubkeyToggle);
+                                            });
+                                            pubkeyToggle.addEventListener("click", function() {
+                                                toggleCollapsible(pubkey, qr, pubkeyToggle, qrToggle);
+                                            });
+                                        </script>
+                                        <style>
+                                            .collapser {
+                                                margin: 0;
+                                                text-decoration: underline;
+                                                cursor:pointer;
+                                            }
+
+
+                                            .collapsible {
+                                                margin-bottom: .5em;
+                                            }
+
+                                            .collapsible.collapsed {
+                                                margin-bottom: 0;
+                                            }
+
+                                            .nostr-cell {
+                                                padding: 0;
+                                            }
+
+                                            .collapser.untoggled:before {
+                                                content: "\25B8 \2004";
+                                                margin-right: 6px;
+                                                display:inline-block;
+                                                text-decoration: none;
+                                            }
+                                            .collapser.toggled:before {
+                                                content: "\25BE \2004";
+                                                margin-right: 6px;
+                                                display:inline-block;
+                                                text-decoration: none;
+                                            }
+
+                                            table.nostr-tab, #nostr-row, td.nostr-cell {
+                                                background-color: transparent !important;
+                                                border: none !important;
+                                            }
+
+                                            .collapsed{
+                                                max-height: 0;
+                                                transition: max-height .5s ease;
+                                                overflow: hidden;
+                                            }
+                                            .expanded {
+                                                max-height: 500px;
+                                                transition: max-height .5s ease;
+                                                overflow: unset;
+                                            }
+                                        </style>
+
                                         <a href="https://njump.me/npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9" class="button">Follow on Nostr</a>
 									</li>
 									<li>
