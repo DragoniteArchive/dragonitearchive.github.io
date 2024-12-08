@@ -1,9 +1,9 @@
 {
   "names": {
-    "YOUR_NOSTR_NAME": "1b5453d155c48bbb2fabdfadff36b5286f997ebf0915fe72535f5b8790d6c6b9"
+    "DragoniteArchive": "1b5453d155c48bbb2fabdfadff36b5286f997ebf0915fe72535f5b8790d6c6b9"
   },
   "relays": {
-    "YOUR_NOSTR_PUBLIC_KEY_IN_HEX_FORMAT": [
+    "1b5453d155c48bbb2fabdfadff36b5286f997ebf0915fe72535f5b8790d6c6b9": [
       "wss://relay.damus.io",
       "wss://nostr.land",
       "wss://nostr.wine",
