@@ -1,12 +1,12 @@
 # Dragonite Archive Website
-### [dragonitearchive.github.io](https://dragonitearchive.github.io)
+### [dragonitearchive.org](https://dragonitearchive.org)
 
 Serves as a hub for the Dragonite Archive social accounts. Does not contain any archived content itself.
 
 
 Mastodon: [@DragoniteArchive@mastodon.social](https://mastodon.social/@DragoniteArchive)
 
-BlueSky: [@DragoniteArchive.bsky.social](https://bsky.app/profile/dragonitearchive.bsky.social)
+BlueSky: [@DragoniteArchive.org](https://bsky.app/profile/dragonitearchive.org)
 
 Nostr: [npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9](https://njump.me/npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9)
 
