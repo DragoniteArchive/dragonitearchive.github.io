@@ -12,7 +12,7 @@
         <link rel="icon" type="image/x-icon" href="/images/logo.svg">
 
         <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://dragonitearchive.github.io">
+        <meta property="og:url" content="https://dragonitearchive.org">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Dragonite Archive">
         <meta property="og:description" content="">
@@ -20,8 +20,8 @@
 
         <!-- Twitter Meta Tags -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta property="twitter:domain" content="dragonitearchive.github.io">
-        <meta property="twitter:url" content="https://dragonitearchive.github.io">
+        <meta property="twitter:domain" content="dragonitearchive.org">
+        <meta property="twitter:url" content="https://dragonitearchive.org">
         <meta name="twitter:title" content="Dragonite Archive">
         <meta name="twitter:description" content="">
         <meta name="twitter:image" content="/images/DragoniteArchive-Rectangle.png">
@@ -35,6 +35,11 @@
 		<script>
             async function getNostrJson() {
                 const response = await fetch('.well-known/nostr.json');
+                const data = await response.json();
+                console.log(data);
+            }
+            async function getAtProtoDid() {
+                const response = await fetch('.well-known/atproto-did');
                 const data = await response.json();
                 console.log(data);
             }
@@ -104,14 +109,14 @@
                                         <h2><strong>BlueSky</strong></h2>
                                         <span class="social-logo"><img width="130px" src="images/bluesky.svg" style="padding-bottom: 20px;"></span>
                                         <h3>Account:</h3>
-                                        <p>@DragoniteArchive.bsky.social</p>
-                                        <a href="https://bsky.app/profile/dragonitearchive.bsky.social" class="button">Follow on BlueSky</a>
+                                        <p>@DragoniteArchive.org</p>
+                                        <a href="https://bsky.app/profile/dragonitearchive.org" class="button">Follow on BlueSky</a>
                                     </li>
                                     <li>
                                         <h2><strong>Nostr</strong></h2>
                                         <span class="social-logo"><img width="130px" src="images/nostr.svg" style="padding-bottom: 20px;"></span>
                                         <h3>Account:</h3>
-                                        <p>DragoniteArchive@dragonitearchive.github.io</p>
+                                        <p>DragoniteArchive@dragonitearchive.org</p>
                                         <h6>click to toggle</h6>
                                         <table class="nostr-tab">
                                             <tr id="nostr-row">
@@ -300,15 +305,15 @@
                                 <dt>Mastodon</dt>
                                 <dd><a href="https://mastodon.social/@DragoniteArchive">@DragoniteArchive@mastodon.social</a></dd>
                                 <dt>BlueSky</dt>
-                                <dd><a href="https://bsky.app/profile/dragonitearchive.bsky.social">@DragoniteArchive.bsky.social</a></dd>
+                                <dd><a href="https://bsky.app/profile/dragonitearchive.org">@DragoniteArchive.org</a></dd>
                                 <dt>Nostr</dt>
-                                <dd style="word-break: break-all"><a href="nostr:npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9">DragoniteArchive@dragonitearchive.github.io</a></dd>
+                                <dd style="word-break: break-all"><a href="nostr:npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9">DragoniteArchive@dragonitearchive.org</a></dd>
                                 <dt>GitHub</dt>
                                 <dd><a href="https://github.com/DragoniteArchive">DragoniteArchive</a></dd>
                             </dl>
                             <ul class="icons">
                                 <li><a href="https://mastodon.social/@DragoniteArchive" class="icon brands"><img src="images/mastodon-white.svg" width="40px"><span class="label">Mastodon</span></a></li>
-                                <li><a href="https://bsky.app/profile/dragonitearchive.bsky.social" class="icon brands"><img src="images/bluesky-white.svg" width="40px"><span class="label">BlueSky</span></a></li>
+                                <li><a href="https://bsky.app/profile/dragonitearchive.org" class="icon brands"><img src="images/bluesky-white.svg" width="40px"><span class="label">BlueSky</span></a></li>
                                 <li><a href="nostr:npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9" class="icon brands"><img src="images/nostr-white.svg" width="40px"><span class="label">Nostr</span></a></li>
                                 <li><a href="https://github.com/DragoniteArchive" class="icon brands"><img src="images/github-white.svg" width="40px"><span class="label">GitHub</span></a></li>
                             </ul>
