@@ -8,7 +8,7 @@ Mastodon: [@DragoniteArchive@mastodon.social](https://mastodon.social/@Dragonite
 
 BlueSky: [@DragoniteArchive.org](https://bsky.app/profile/dragonitearchive.org)
 
-Nostr: [npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9](https://njump.me/npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9)
+Nostr (inactive): [npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9](https://njump.me/npub1rd298524cj9mktatm7kl7d449phejl4lpy2luujntadc0yxkc6uskamhv9)
 
 GitHub: [DragoniteArchive](https://github.com/DragoniteArchive)
 
